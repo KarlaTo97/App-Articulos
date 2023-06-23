@@ -1,0 +1,47 @@
+<div class="card col-md-4 mx-auto mt-5">
+  <div class="card-header bg-info text-center mb-3">
+    <h5 style="color: white">Cargar artículo</h5>
+  </div>
+  <form action="/cargar-articulo" method="get">
+    <div class="mb-3">
+      <i class="fa-solid fa-building-columns"></i>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Tipo Subsistema</option>
+        <option value="1">Universidad Tecnológica</option>
+        <option value="2">Universidad Politécnica</option>
+        <option value="3">Instituto Tecnológico</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <i class="fa-solid fa-book"></i>
+      <input
+        type="text"
+        class="form-control"
+        id="tituloarticulo"
+        aria-describedby="tituloarticulo"
+        placeholder="Título Artículo"
+      />
+    </div>
+    <div class="mb-3">
+      <i class="fa-regular fa-user"></i>
+      <input type="text" class="form-control" id="autor" placeholder="Autor" />
+    </div>
+    <div class="mb-3">
+      <i class="fa-solid fa-book-open-reader"></i>
+      <textarea
+        class="form-control"
+        id="resumen"
+        rows="3"
+        placeholder="Breve resumen del artículo"
+      ></textarea>
+    </div>
+    <div class="mb-3">
+      <i class="fa-regular fa-file-lines"></i>
+      <section id="multi-selector-uniq">
+        <input id="files" type="file" multiple>
+        <ul id="preview"></ul>
+    </section>
+    </div>
+      <button type="submit" class="btn btn-primary mb-3">Cargar archivo</button>
+    </form>
+</div>
